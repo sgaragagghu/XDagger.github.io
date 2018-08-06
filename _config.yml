@@ -1,19 +1,53 @@
-markdown: kramdown
+# Site configuration
 
-index_title: XDAG A new DAG-based cryptocurrency
-index_keywords: XDAG,DAG,MINNING
-index_description: XDAG is a novel application of Directed Acyclic Graph (DAG) technology that solves the issues currently facing blockchain technology.
-
-dag_title: About Dagger
-dag_content: Dagger is part of a new wave of Distributed Ledger projects based on a DAG infrastructure. DAG, or Directed acyclic graph, is an alternative method for sending data amongst people within a distributed, decentralized environment. This is done without a blockchain, allowing for greater scalability.
-
-mine_title: Mining quick start
-mine_content: The first mineable DAG. Follow the steps below. If you get stuck, join us in the discord.
-
-wallet_title: Wallets
-wallet_content: Select the wallet you require and download will being instantly.
-
-team_title: XDAG_team
 devNum: 28
+community_wallet: FQglVQtb60vQv2DOWEUL7yh3smtj7g1s
 
-offical: FQglVQtb60vQv2DOWEUL7yh3smtj7g1s
+# Jekyll configuration
+
+baseurl: "/"
+
+paginate: 7
+paginate_path: "/blog/page:num"
+
+sass:
+  style: compressed
+
+## jekyll-seo-tag
+
+title: XDAG
+description: A new DAG-based cryptocurrency
+logo: /assets/images/logo.png
+
+author:
+  name: Xdag.io
+  twitter: XDAG_Community
+  email: communitymanager@xdag.io 
+
+social:
+  links:
+    - https://t.me/dagger_cryptocurrency
+    - https://www.facebook.com/XDAG.Dagger.Community/
+    - https://twitter.com/XDAG_Community
+    - https://discord.gg/YxXUVQJ
+    - https://www.reddit.com/r/xdag/
+    - https://github.com/orgs/XDagger
+
+twitter:
+  card: summary
+  username: XDAG_Community
+
+facebook:
+  publisher: https://www.facebook.com/XDAG.Dagger.Community/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/default-card.png
+      
+## end jekyll-seo-tag
+
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
